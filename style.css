@@ -1,0 +1,278 @@
+@charset "UTF-8";
+canvas {
+  display: block;
+  position: absolute;
+  top: 1800px;
+  right: 0px;
+}
+
+@media (max-width: 768px) {
+  canvas {
+    top: 1300px;
+  }
+}
+
+@media (max-width: 414px) {
+  canvas {
+    top: 1150px;
+  }
+}
+
+p {
+  font-family: "游ゴシック";
+}
+
+.txtl {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .txtl {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txtl {
+    font-size: 20px;
+  }
+}
+
+.txtm {
+  font-size: 24px;
+  letter-spacing: 1.3px;
+  color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+  .txtm {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txtm {
+    font-size: 16px;
+  }
+}
+
+.txts {
+  font-size: 20px;
+  letter-spacing: 1.3px;
+}
+
+@media (max-width: 768px) {
+  .txts {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txts {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+body .start {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+  text-align: center;
+}
+
+body .start p {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  font-size: 40px;
+  color: #0066FF;
+  width: 700px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body .start p {
+    font-size: 25px;
+    top: 30%;
+  }
+}
+
+@media (max-width: 414px) {
+  body .start p {
+    top: 40%;
+    font-size: 15px;
+  }
+}
+
+body header {
+  z-index: -1;
+}
+
+body header .main {
+  background-image: url(img/main.png);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body header .main {
+    background-position: center;
+    height: 968px;
+  }
+}
+
+@media (max-width: 414px) {
+  body header .main {
+    height: 100%;
+    background-size: cover;
+  }
+}
+
+body .title {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  z-index: 10;
+}
+
+body .title .txtl {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+
+body .title2 {
+  position: absolute;
+  top: 900px;
+  left: 140px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  body .title2 {
+    top: 800px;
+    left: 140px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .title2 {
+    top: 6500px;
+    left: 35px;
+  }
+}
+
+body .title2 .txtl {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+
+body .picture1 {
+  position: absolute;
+  top: 250px;
+  left: 32%;
+  width: 600px;
+  height: 450px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  body .picture1 {
+    top: 250px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .picture1 {
+    top: 150px;
+    left: 30%;
+    width: 200px;
+    height: 125px;
+  }
+}
+
+body .picture1 img {
+  width: 100%;
+}
+
+body .Intro {
+  position: absolute;
+  top: 1000px;
+  right: 500px;
+  width: 470px;
+  height: 270px;
+  z-index: 10;
+}
+
+body .Intro p {
+  color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+  body .Intro {
+    top: 900px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .Intro {
+    top: 800px;
+    left: 35px;
+    width: 300px;
+    height: 180px;
+  }
+}
+
+body .Intro img {
+  width: 100%;
+}
+
+body .maintopic {
+  position: absolute;
+  top: 1200px;
+  left: 140px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  body .maintopic {
+    top: 1000px;
+    left: 140px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .maintopic {
+    top: 850px;
+    left: 35px;
+    font-size: 15px;
+  }
+}
+
+body .maintopic .description {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+/*# sourceMappingURL=style.css.map */

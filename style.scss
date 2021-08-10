@@ -1,0 +1,220 @@
+$ipad:768px;
+$i7:414px;
+
+@mixin ipad{
+    @media (max-width:($ipad)){
+        @content;
+    }
+}
+@mixin i7{
+    @media (max-width:($i7)){
+        @content;
+    }
+}
+
+canvas{
+    display: block;
+    position: absolute;
+    top: 1800px; 
+    right: 0px;
+    @include ipad{
+        top: 1300px;
+    }
+    @include i7{
+        top: 1150px;
+    }
+}
+p{
+    font-family: "游ゴシック";
+}
+.txtl{
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    @include ipad{
+        font-size: 24px;
+    }
+    @include i7{
+        font-size: 20px;
+    }
+}
+.txtm{
+    font-size: 24px;
+    letter-spacing: 1.3px;
+    color: #f0f8ff;
+    @include ipad{
+        font-size: 20px;
+    }
+    @include i7{
+        font-size: 16px;
+    }
+}
+.txts{
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    @include ipad{
+        font-size: 16px;
+    }
+    @include i7{
+        font-size: 14px;
+    }
+}
+
+
+
+
+body{
+    margin: 0;
+    
+
+    .start{
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9000;
+        text-align: center;
+        p{
+            position: fixed;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%,-50%);
+            display: none;
+            z-index: 9999;
+            font-size: 40px;
+            color: #0066FF;
+            width: 700px;
+            text-align: center;
+
+            @include ipad{
+                font-size: 25px;
+                top: 30%;
+            }
+            @include i7{
+                top: 40%;
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    header{
+        z-index: -1;
+        .main{
+            background-image: url(img/main.png);
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            @include ipad{
+                background-position: center;
+                height:968px;
+            }
+            @include i7{
+                height: 100%;
+                background-size: cover;
+            }
+        }
+    }
+    .title{
+        position: absolute;
+        top: 10%;
+        left: 45%;
+        z-index: 10;
+        .txtl{
+            font-size: 40px;
+            font-weight: bold;
+            color: #f0f8ff;
+        }
+    }
+    .title2{
+        position: absolute;
+        top: 900px;
+        left: 140px;
+        z-index: 10;
+        @include ipad{
+            top: 800px;
+            left: 140px;
+        }
+        @include i7{
+            top: 6500px;
+            left: 35px;
+        }
+        .txtl{
+            font-size: 30px;
+            font-weight: bold;
+            color: #f0f8ff;
+        }
+    }
+    .picture1{
+        position: absolute;
+        top: 250px;
+        left: 32%;
+        width: 600px;
+        height: 450px;
+        z-index: 10;
+        @include ipad{
+            top: 250px;
+        }
+        @include i7{
+            top: 150px;
+            left: 30%;
+            width: 200px;
+            height: 125px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .Intro{
+        position: absolute;
+        top: 1000px;
+        right: 500px;
+        width: 470px;
+        height: 270px;
+        z-index: 10;
+        p{
+            color: #f0f8ff;
+        }
+        @include ipad{
+            top: 900px;
+            right: 200px;
+        }
+        @include i7{
+            top: 800px;
+            left: 35px;
+            width: 300px;
+            height: 180px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .maintopic{
+        position: absolute;
+        top: 1200px;
+        left: 140px;
+        z-index: 10;
+        @include ipad{
+            top: 1000px;
+            left: 140px;
+            font-size: 23px;
+        }
+        @include i7{
+            top: 850px;
+            left: 35px;
+            font-size: 15px;
+        }
+        .description{
+            font-size: 30px;
+            font-weight: bold;
+            color: #f0f8ff;
+        }
+    }
+
+}
