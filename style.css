@@ -372,7 +372,7 @@ body .maintopic {
 
 @media (max-width: 768px) {
   body .maintopic {
-    top: 1300px;
+    top: 1380px;
     font-size: 23px;
   }
 }
@@ -385,22 +385,22 @@ body .maintopic {
 }
 
 body .maintopic .description {
-  font-size: 27px;
+  font-size: 23px;
   font-weight: bold;
   color: #f0f8ff;
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   body .maintopic .description {
-    font-size: 19px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 414px) {
   body .maintopic .description {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 
@@ -427,7 +427,7 @@ body #wrap .blog-header {
 }
 
 body #wrap .blog-header h1 {
-  width: 660px;
+  max-width: 660px;
   margin: 20px auto;
   text-align: center;
   font-size: 22px;
