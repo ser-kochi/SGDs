@@ -1,0 +1,241 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "游ゴシック";
+}
+
+.txtl {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .txtl {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txtl {
+    font-size: 20px;
+  }
+}
+
+.txtm {
+  font-size: 24px;
+  letter-spacing: 1.3px;
+  color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+  .txtm {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txtm {
+    font-size: 16px;
+  }
+}
+
+.txts {
+  font-size: 20px;
+  letter-spacing: 1.3px;
+}
+
+@media (max-width: 768px) {
+  .txts {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 414px) {
+  .txts {
+    font-size: 14px;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.thumbnail {
+  border: none;
+  padding: 0;
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+.thumbnail a {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+hr {
+  border-top: 1px solid limegreen;
+}
+
+body {
+  background-image: url(img/main.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+body header .container:after, body header .row:after {
+  clear: both;
+}
+
+body header .container:after, body header .container:before {
+  content: " ";
+  display: table;
+}
+
+body header h1 {
+  margin: 0;
+}
+
+body header .logo {
+  width: 100%;
+}
+
+body header p {
+  margin-top: 35px;
+  font-family: "A-OTF-ShinGoPro-Regular";
+  font-size: 26px;
+  color: #6F6F6F;
+  font-weight: bold;
+}
+
+body header .nav-bg {
+  background: #7cfc00;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body header .nav-bg .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header .nav-bg .navbar-nav a {
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+body header .nav-bg .navbar-nav li {
+  margin-right: 60px;
+}
+
+body header .nav > li {
+  position: relative;
+  display: block;
+}
+
+body header .nav:before, body header .nav:after, body header .row:before, body header .row:after {
+  content: "";
+  display: table;
+}
+
+body main {
+  margin-top: 144px;
+}
+
+body main #topicsMain {
+  background: #fff;
+  opacity: 0.9;
+}
+
+body main .wrap {
+  background: #fff;
+  opacity: 0.9;
+}
+
+body main .wrap h2 {
+  padding: 0 40px;
+  margin-top: 35px;
+}
+
+body main .wrap .thumbnail {
+  margin-top: 30px;
+}
+
+body main .wrap .thumbnail a {
+  width: 100%;
+  height: 600px;
+}
+
+body main aside h4 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+body main aside div {
+  margin-top: 35px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+body main .archive {
+  margin-bottom: 40px;
+  height: 1200px;
+}
+
+body main .archive ul {
+  margin-top: 40px;
+}
+
+body main .archive ul li {
+  border-top: dotted 1px limegreen;
+  font-size: 17px;
+}
+
+body main .archive ul li a {
+  color: #7B7B7B;
+  line-height: 55px;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
