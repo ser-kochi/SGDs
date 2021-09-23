@@ -104,14 +104,35 @@ hr {
 }
 
 body {
+  margin: 0;
+}
+
+body .fixedBack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
   background-image: url(img/main.png);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  body .fixedBack {
+    background-position: center;
+    height: 968px;
+  }
+}
+
+@media (max-width: 414px) {
+  body .fixedBack {
+    height: 100%;
+    background-size: cover;
+  }
+}
+
 body header {
-  background-color: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -140,7 +161,7 @@ body header p {
   margin-top: 35px;
   font-family: "A-OTF-ShinGoPro-Regular";
   font-size: 26px;
-  color: #6F6F6F;
+  color: #363535;
   font-weight: bold;
 }
 
