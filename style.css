@@ -156,6 +156,11 @@ body header h1 {
 
 body header .logo {
   width: 100%;
+  margin-top: 5px;
+}
+
+body header .sdgslogo {
+  width: 100%;
 }
 
 body header p {
@@ -167,7 +172,7 @@ body header p {
 }
 
 body header .nav-bg {
-  margin-top: 40px;
+  margin-top: 45px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -185,7 +190,6 @@ body header .nav-bg .navbar-nav a {
   letter-spacing: 1px;
   font-family: sans-serif;
   font-weight: 600;
-  vertical-align: middle;
   display: block;
 }
 
